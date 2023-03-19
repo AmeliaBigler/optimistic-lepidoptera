@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Suzy",
+      "email": "suzyq@hotmail.com",
+      "password": "password321"
+    },
+    {
+      "name": "Lee",
+      "email": "lee@gmail.com",
+      "password": "password321"
+    },
+    {
+      "name": "Cindy",
+      "email": "cindy2020@aol.com",
+      "password": "password321"
+    },
+    {
+      "name": "Jojo",
+      "email": "jojo99@msn.com",
+      "password": "password321"
+    },
+    {
+      "name": "Brenda",
+      "email": "brenda@yahoo.com",
+      "password": "password321"
+    }
+  ]

@@ -1,0 +1,27 @@
+[
+    {
+        "article_id": "5",
+        "commenter_id": "5",
+        "comment_body": "I love flexbox froggy!"
+    },
+    {
+        "article_id": "5",
+        "commenter_id": "3",
+        "comment_body": "Great list."
+    },
+    {
+        "article_id": "5",
+        "commenter_id": "4",
+        "comment_body": "I'm going to check these out."
+    },
+    {
+        "article_id": "4",
+        "commenter_id": "4",
+        "comment_body": "I had a similar experience."
+    },
+    {
+        "article_id": "4",
+        "commenter_id": "3",
+        "comment_body": "congratulations on completing the bootcamp!"
+    }
+]

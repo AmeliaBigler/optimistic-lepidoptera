@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Biden Bans Tiktok",
+        "author_id": "1",
+        "article_body": "Biden is expected to ban tiktok this month."
+    },
+    {
+        "title": "Bing's Chat AI",
+        "author_id": "1",
+        "article_body": "Bing's Chat AI uses Chat GPT technology."
+    },
+    {
+        "title": "Book Recommendations 2023",
+        "author_id": "2",
+        "article_body": "Here is a list of my favorite books so far this year:"
+    },
+    {
+        "title": "My Coding Bootcamp Experience",
+        "author_id": "2",
+        "article_body": "The pre-work module was extremely useful."
+    },
+    {
+        "title": "My Favorite Beginner Tools",
+        "author_id": "2",
+        "article_body": "flexbox froggy, "
+    }
+]

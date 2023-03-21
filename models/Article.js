@@ -22,7 +22,7 @@ Article.init(
             key: 'id',
         },
       },
-      body: {
+      article_body: {
         type: DataTypes.STRING,
         allowNull: false,
       },

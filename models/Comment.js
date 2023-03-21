@@ -25,7 +25,7 @@ Comment.init(
             key: 'id',
         },
       },
-      body: {
+      comment_body: {
         type: DataTypes.STRING,
         allowNull: false,
       },
@@ -35,7 +35,7 @@ Comment.init(
       timestamps: false,
       freezeTableName: true,
       underscored: true,
-      modelName: 'article',
+      modelName: 'comment',
     }
   );
   

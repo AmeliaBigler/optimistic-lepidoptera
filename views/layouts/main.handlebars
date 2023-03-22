@@ -17,20 +17,20 @@
         </div>
     </div>
     
-    {{#if logged_in}}
+    
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
+            <button class="btn" id="home">Home</button>
+            {{#if logged_in}}
+            <button class="btn" id="dashboard">My Dashboard</button>
             <button class="btn" id="logout">Logout</button>
-        </div>
-    </nav>
-    {{else}}
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+            {{else}}
             <button class="btn" id="login">Login</button>
             <button class="btn" id="signup">Sign Up</button>
+            {{/if}}
         </div>
     </nav>
-    {{/if}}
+    
   </header>
 
   <main class="container">
@@ -40,11 +40,11 @@
   <footer></footer>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+  <script src="/js/index.js"></script>
   {{#if logged_in}}
   <script src="/js/logout.js"></script>
-  {{else}}
-  <script src="/js/login.js"></script>
   {{/if}}
+  
 </body>
 
 </html>

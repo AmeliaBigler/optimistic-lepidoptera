@@ -27,7 +27,7 @@ const signUpButton = async () => {
   document.location.replace('/signup');
 };
   
-// document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
+document.querySelector('.login-form').addEventListener('submit', loginFormHandler);
 document.querySelector('#login').addEventListener('click', loginButton);
 document.querySelector('#signup').addEventListener('click', signUpButton);
-// document.querySelector('#signUpBtn').addEventListener('click', signUpButton);
+document.querySelector('#signUpBtn').addEventListener('click', signUpButton);

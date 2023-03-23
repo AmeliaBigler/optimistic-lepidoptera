@@ -1,11 +1,10 @@
 {{#each articles as |article| }}
 <div class="row">
   <div class="col">
-    <h2>{{article.title}}</h2>
+    <a href="/article/{{article.id}}">{{article.title}}</a>
+    <h3>{{format_date article.date_created}}</h3>
   </div>
 </div>
 {{/each}}
 
-<script src="/js/home.js"></script>
-
-{{!-- add article.author and article.body --}}
+{{!-- add article publish date --}}

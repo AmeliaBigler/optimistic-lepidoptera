@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col">
+    <h2>{{title}}</h2>
+    <h3>{{user.name}}</h3>
+    <h4>{{format_date date_created}}</h4>
+    <p>{{article_body}}</p>
+  </div>
+</div>
+<div class="row">
+    <div class="col">
+        <h3>Comments</h3>
+        {{#each comments as |comment| }}
+        <div class="row">
+            <div class="col">
+                <h4>{{comment.commenter_id}}</h4>
+                <p>{{comment.comment_body}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
+
+{{!-- add article.author and article.body --}}
+{{!-- add comment form --}}

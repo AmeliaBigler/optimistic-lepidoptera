@@ -33,8 +33,8 @@ router.post('/', async (req, res) => {
   // create a new article
   /* req.body should look like this...
     {
-      "title":"Big News"
-      "author_id":""
+      "title":"Big News",
+      "author_id": 3,
       "article_body":"Current tech news"
     }
   */

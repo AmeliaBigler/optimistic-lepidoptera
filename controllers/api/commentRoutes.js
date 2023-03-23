@@ -33,9 +33,9 @@ router.post('/', async (req, res) => {
   // create a new comment
   /* req.body should look like this...
     {
-      "article_id":"",
-      "commenter_id":"",
-      "comment_body":"string string string"
+      "article_id": 3,
+      "commenter_id": 4,
+      "comment_body":"string"
     }
   */
   try {

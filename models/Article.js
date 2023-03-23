@@ -11,14 +11,14 @@ Article.init(
         primaryKey: true,
         autoIncrement: true,
       },
-      title: {
-        type: DataTypes.STRING,
-        allowNull: false,
-      },
       date_created: {
         type: DataTypes.DATE,
         allowNull: false,
         defaultValue: DataTypes.NOW,
+      },
+      title: {
+        type: DataTypes.STRING,
+        allowNull: false,
       },
       author_id: {
         type: DataTypes.INTEGER,

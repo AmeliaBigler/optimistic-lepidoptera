@@ -1,6 +1,15 @@
+{{!-- {{#if (sessionUserisAuthor user.id)}}
+<div class="row">
+    <div class="col">
+        <a href="/updateArticle/{{id}}">Update Article</a>
+        <button id="delete">Delete Article</button>
+    </div>
+</div>
+{{/if}} --}}
+
 <div class="row">
   <div class="col">
-    <h2>{{title}}</h2>
+    <h2 class="articleTitle" id="{{id}}">{{title}}</h2>
     <h3>{{user.name}}</h3>
     <h4>{{format_date date_created}}</h4>
     <p>{{article_body}}</p>
@@ -12,7 +21,8 @@
         {{#each comments as |comment| }}
         <div class="row">
             <div class="col">
-                <h4>{{comment.commenter_id}}</h4>
+                <h4>{{comment.user.name}}</h4>
+                <p>{{format_date comment.date_created}}</p>
                 <p>{{comment.comment_body}}</p>
             </div>
         </div>
@@ -20,5 +30,22 @@
     </div>
 </div>
 
-{{!-- add article.author and article.body --}}
-{{!-- add comment form --}}
+<div class="row">
+    <div class="col">
+        <h2 class="commenter" id="{{sessionUser.id}}">Leave a Comment:</h2>
+    </div>
+</div>
+<form class="form comment-form">
+  <div class="form-group">
+    <label for="comment-body">Comment:</label>
+    <input class="form-input" type="text" id="comment-body"/>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-primary" type="submit">Post Comment</button>
+  </div>
+</form>
+
+<script src="../js/submitComment.js"></script>
+{{!-- {{#if (sessionUserisAuthor user, req)}}
+<script src="../js/deleteArticle.js"></script>
+{{/if}} --}}

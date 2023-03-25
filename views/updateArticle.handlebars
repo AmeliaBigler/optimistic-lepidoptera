@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col">
-        <h2>Update Article</h2>
+        <h2 class="updateID" id="{{id}}">Update Article: {{title}}</h2>
         <h3 class="author" id="{{user.id}}">Written by: {{user.name}}</h3>
     </div>
 </div>
@@ -8,15 +8,15 @@
 <form class="form article-form">
   <div class="form-group">
     <label for="article-title">Title:</label>
-    <input class="form-input" type="text" id="article-title"/>
+    <input class="form-input" type="text" id="article-title" value="{{title}}"/>
   </div>
   <div class="form-group">
     <label for="article-body">Body:</label>
-    <input class="form-input" type="text" id="article-body"/>
+    <textarea class="form-control" id="article-body" name="article-body" rows="3">{{article_body}}</textarea>
   </div>
   <div class="form-group">
     <button class="btn btn-primary" type="submit">Publish</button>
   </div>
 </form>
 
-<script src="./js/submitArticle.js"></script>
+<script src="../js/updateArticle.js"></script>

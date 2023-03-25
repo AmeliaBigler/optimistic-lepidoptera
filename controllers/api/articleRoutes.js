@@ -50,8 +50,7 @@ router.put('/:id', async (req, res) => {
   // update a article by its `id` value
   /* req.body should look like this...
     {
-      "title":"Big News"
-      "author_id":""
+      "title":"Big News",
       "article_body":"Current tech news"
     }
   */

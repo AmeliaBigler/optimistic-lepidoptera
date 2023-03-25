@@ -1,6 +1,6 @@
 <div class="row">
     <div class="col">
-        <a href="/newarticle">Create a New Article</a>
+        <a class="btn btn-primary" href="/newarticle" role="button">Create a New Article</a>
     </div>
 </div>
 <div class="row">
@@ -8,11 +8,21 @@
         <h2>My Articles</h2>
     </div>
 </div>
-{{#each articles as |article| }}
+
 <div class="row">
-  <div class="col">
-    <a href="/article/{{article.id}}">{{article.title}}</a>
-    <h3>{{format_date article.date_created}}</h3>
+  {{#each articles as |article| }}
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{article.title}}</h5>
+        <h6 class="card-subtitle mb-2 text-body-secondary">{{format_date article.date_created}}</h6>
+        <a href="/article/{{article.id}}" class="card-link">Read More</a>
+        <a class="btn btn-secondary" class="card-link" href="/updateArticle/{{article.id}}" role="button">Edit</a>
+        <button type="button" class="btn btn-danger delete" id="{{article.id}}">Delete</button>
+      </div>
+    </div> 
   </div>
+  {{/each}}
 </div>
-{{/each}}
+
+<script src="../js/deleteArticle.js"></script>

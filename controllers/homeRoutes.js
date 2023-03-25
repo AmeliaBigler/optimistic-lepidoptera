@@ -75,7 +75,7 @@ router.get('/updateArticle/:id', withAuth, async (req, res) => {
     });
     const article = articleData.get({ plain: true });
 
-    res.render('article', {
+    res.render('updateArticle', {
       ...article,
       user_id: req.session.user_id,
       logged_in: req.session.logged_in

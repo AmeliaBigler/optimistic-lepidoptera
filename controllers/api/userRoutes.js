@@ -82,11 +82,9 @@ router.post('/', async (req, res) => {
   // create a new user
   try {
     const userData = await User.create(req.body);
-    res.status(200).json(userData);
-
+    
     req.session.save(() => {
       req.session.user_id = userData.id;
-      
       res.json({ user: userData, message: 'Sign up successful! You may log in!' });
     });
 

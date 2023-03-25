@@ -1,32 +1,27 @@
-{{!-- {{#if (sessionUserisAuthor user.id)}}
-<div class="row">
-    <div class="col">
-        <a href="/updateArticle/{{id}}">Update Article</a>
-        <button id="delete">Delete Article</button>
-    </div>
-</div>
-{{/if}} --}}
-
 <div class="row">
   <div class="col">
     <h2 class="articleTitle" id="{{id}}">{{title}}</h2>
-    <h3>{{user.name}}</h3>
+    <h3>Author: {{user.name}}</h3>
     <h4>{{format_date date_created}}</h4>
     <p>{{article_body}}</p>
   </div>
 </div>
 <div class="row">
     <div class="col">
-        <h3>Comments</h3>
+      <h3>Comments</h3>
+      <div class="row">
         {{#each comments as |comment| }}
-        <div class="row">
-            <div class="col">
-                <h4>{{comment.user.name}}</h4>
-                <p>{{format_date comment.date_created}}</p>
-                <p>{{comment.comment_body}}</p>
+          <div class="col-12">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">{{comment.user.name}}</h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">{{format_date comment.date_created}}</h6>
+                <p class="card-text">{{comment.comment_body}}</p>
+              </div>
             </div>
-        </div>
+          </div>
         {{/each}}
+      </div>
     </div>
 </div>
 
@@ -46,6 +41,3 @@
 </form>
 
 <script src="../js/submitComment.js"></script>
-{{!-- {{#if (sessionUserisAuthor user, req)}}
-<script src="../js/deleteArticle.js"></script>
-{{/if}} --}}

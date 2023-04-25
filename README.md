@@ -15,7 +15,7 @@ N/A
 
 ## Usage
 
-This app can be used to keep up with current events and opinions in the tech feild. 
+This app can be used to keep up with current events and opinions in the tech field. 
 Users sign up with an email, username, and password that is encrypted. 
 Users can create, update, and delete articles from their dashboard. 
 
